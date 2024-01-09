@@ -1,0 +1,21 @@
+The Wavelet Synchrosqueezing Transform (WSST) is a method for analyzing 
+2D images that combines the wavelet transform, a reallocation technique, 
+and a clustering algorithm. It can separate and identify the wave-like 
+components of an image, such as edges, textures, and patterns, and 
+estimate their instantaneous wavevectors, which indicate the direction and 
+frequency of the oscillations12.
+
+The WSST works by first applying the wavelet transform to the image, which
+ produces a time-scale representation of the image. Then, it uses a formula
+  to compute the instantaneous frequency of each wavelet coefficient, 
+  which is related to the local oscillation of the image. Next, it reassigns the 
+  wavelet coefficients to new scales according to their instantaneous 
+  frequencies, which results in a sharper and more focused representation. 
+  Finally, it applies a clustering algorithm to group the coefficients into 
+  different modes, each corresponding to a wave-like component of the 
+  image12.
+
+The WSST can be useful for applications such as image segmentation, 
+denoising, compression, and feature extraction. It can also handle images
+ with non-stationary or multi-directional components, which are challenging
+  for traditional wavelet methods123.
