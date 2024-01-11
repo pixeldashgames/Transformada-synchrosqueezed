@@ -40,9 +40,6 @@ def apply_cwt(image_str, wavelet_str):
     # Plot the original image
     viz(image, 'Original Image')
 
-    # Plot the first layer of the 3D matrix returned by the cwt
-    viz(Tx[:, :, 0].real, 'First Layer of the 3D matrix returned by the cwt')
-
     # Plot the image after applying the inverse transform with grayscale colormap
     viz(Tx_i, 'Image After Applying Inverse Transform')
 
